@@ -11,7 +11,7 @@ class DropDown extends Component {
             <fieldset>
                 <div class="form-group">
                   <label for={this.props.Name}>{this.props.Name}</label><br/>
-                  <select class="form-control" id="exampleSelect1">
+                  <select onChange={this.props.changeHandler} class="form-control" id="exampleSelect1">
                       {this.props.options}
                   </select>
                 </div>
